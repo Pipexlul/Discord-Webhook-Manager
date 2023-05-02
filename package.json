@@ -1,0 +1,16 @@
+{
+  "name": "create-gh-webhooks",
+  "author": {
+    "name": "Felipe Guajardo",
+    "email": "felipgg@gmail.com",
+    "url": "https://github.com/Pipexlul"
+  },
+  "version": "1.0.0",
+  "description": "Assign a single webhook to multiple repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
