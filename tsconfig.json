@@ -2,7 +2,8 @@
   "extends": "@tsconfig/node-lts",
   "compilerOptions": {
     "outDir": "./build",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "sourceMap": true
   },
   "exclude": ["**/*.test.ts", "**/*.spec.ts", "node_modules/"]
 }
