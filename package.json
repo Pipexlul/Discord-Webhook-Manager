@@ -9,6 +9,7 @@
   "description": "Assign a single webhook to multiple repositories",
   "main": "index.js",
   "scripts": {
+    "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
