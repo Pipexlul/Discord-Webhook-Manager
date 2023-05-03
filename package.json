@@ -17,5 +17,8 @@
   "devDependencies": {
     "@tsconfig/node-lts": "^18.12.1",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "commander": "^10.0.1"
   }
 }
