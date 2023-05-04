@@ -1,7 +1,12 @@
-# Discord Webhook Manager
+# Github Bulk Actions
 
-Helper CLI tool that will allow you to easily manager your discord webhooks in multiple github repositories along with other functionality.
+Helper CLI tool that will allow you to easily manage github functionality in a single command that would otherwise require a lot of repetition.
 
 ## IN DEVELOPMENT
 
-Current version: 0.2.0
+Current version: 0.3.0
+
+## Commands
+
+- add-discord-webhook
+- invite-person

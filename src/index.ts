@@ -7,7 +7,7 @@ const main = async () => {
   console.log(figlet.textSync("Github Bulk Actions"));
 
   const program = new Command()
-    .version("0.2.0")
+    .version("0.3.0")
     .description("CLI to help with Github processes that require repetition.");
 
   commands.forEach((command) => {
