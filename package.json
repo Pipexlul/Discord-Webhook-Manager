@@ -7,11 +7,11 @@
   },
   "version": "1.0.0",
   "description": "Assign a single webhook to multiple repositories",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "npx tsc",
     "test": "node dist/index.js",
-    "runtest": "npm run build && npm run test"
+    "testr": "npm run build && npm run test"
   },
   "keywords": [],
   "license": "ISC",
