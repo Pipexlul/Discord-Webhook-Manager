@@ -1,7 +1,7 @@
 import { Command } from "@commander-js/extra-typings";
 
-import addWebhook from "./addWebhook.js";
+import addDiscWebhook from "./addDiscWebhook.js";
 
-const commands: Command[] = [addWebhook];
+const commands: Command[] = [addDiscWebhook];
 
 export default commands;

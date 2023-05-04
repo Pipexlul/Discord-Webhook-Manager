@@ -1,12 +1,12 @@
 {
-  "name": "discord-webhook-manager",
+  "name": "github-bulk-actions",
   "author": {
     "name": "Felipe Guajardo",
     "email": "felipgg@gmail.com",
     "url": "https://github.com/Pipexlul"
   },
   "version": "0.2.0",
-  "description": "Manage a discord webhook in multiple ways, like bulk assign to multiple github repositories.",
+  "description": "CLI tool to ease the process of executing actions on Github. Eg. Assign a discord webhook to multiple repositories",
   "main": "dist/index.js",
   "scripts": {
     "build": "npx tsc",
