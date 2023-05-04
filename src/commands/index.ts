@@ -1,8 +1,7 @@
 import { Command } from "@commander-js/extra-typings";
 
-import updateRepos from "./updateRepositories.js";
-import devHelp from "./devHelp.js";
+import addWebhook from "./addWebhook.js";
 
-const commands: Command[] = [updateRepos, devHelp];
+const commands: Command[] = [addWebhook];
 
 export default commands;
