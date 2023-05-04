@@ -4,7 +4,8 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "sourceMap": true,
-    "module": "ES2022"
+    "module": "ESNext",
+    "resolveJsonModule": true
   },
   "exclude": ["**/*.test.ts", "**/*.spec.ts", "node_modules/"]
 }
