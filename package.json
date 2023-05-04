@@ -1,16 +1,17 @@
 {
-  "name": "create-gh-webhooks",
+  "name": "discord-webhook-manager",
   "author": {
     "name": "Felipe Guajardo",
     "email": "felipgg@gmail.com",
     "url": "https://github.com/Pipexlul"
   },
-  "version": "1.0.0",
-  "description": "Assign a single webhook to multiple repositories",
-  "main": "index.js",
+  "version": "0.2.0",
+  "description": "Manage a discord webhook in multiple ways, like bulk assign to multiple github repositories.",
+  "main": "dist/index.js",
   "scripts": {
     "build": "npx tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node dist/index.js",
+    "testr": "npm run build && npm run test"
   },
   "keywords": [],
   "license": "ISC",
@@ -19,7 +20,14 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@commander-js/extra-typings": "^10.0.3",
+    "@types/figlet": "^1.5.6",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.16.3",
     "commander": "^10.0.1",
-    "figlet": "^1.6.0"
-  }
+    "figlet": "^1.6.0",
+    "inquirer": "^9.2.0",
+    "octokit": "^2.0.14"
+  },
+  "type": "module"
 }

@@ -1,9 +1,11 @@
 {
   "extends": "@tsconfig/node-lts",
   "compilerOptions": {
-    "outDir": "./build",
+    "outDir": "./dist",
     "rootDir": "./src",
-    "sourceMap": true
+    "sourceMap": true,
+    "module": "ESNext",
+    "resolveJsonModule": true
   },
   "exclude": ["**/*.test.ts", "**/*.spec.ts", "node_modules/"]
 }
