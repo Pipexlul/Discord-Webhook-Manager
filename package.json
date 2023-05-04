@@ -5,7 +5,7 @@
     "email": "felipgg@gmail.com",
     "url": "https://github.com/Pipexlul"
   },
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "Assign a single webhook to multiple repositories",
   "main": "dist/index.js",
   "scripts": {
