@@ -1,12 +1,12 @@
 {
-  "name": "create-gh-webhooks",
+  "name": "discord-webhook-manager",
   "author": {
     "name": "Felipe Guajardo",
     "email": "felipgg@gmail.com",
     "url": "https://github.com/Pipexlul"
   },
   "version": "0.2.0",
-  "description": "Assign a single webhook to multiple repositories",
+  "description": "Manage a discord webhook in multiple ways, like bulk assign to multiple github repositories.",
   "main": "dist/index.js",
   "scripts": {
     "build": "npx tsc",
