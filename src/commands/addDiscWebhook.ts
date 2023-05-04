@@ -4,7 +4,7 @@ import inquirer from "inquirer";
 
 import { delay } from "../utils/timingUtils.js";
 
-const addWebhook = new Command("add-webhook")
+const addDiscWebhook = new Command("add-discord-webhook")
   .description("Add a discord webhook to your repositories based on a regex")
   .option(
     "-f, --force",
@@ -101,4 +101,4 @@ const addWebhook = new Command("add-webhook")
     }
   });
 
-export default addWebhook;
+export default addDiscWebhook;
