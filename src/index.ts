@@ -4,10 +4,10 @@ import { Command } from "@commander-js/extra-typings";
 import commands from "./commands/index.js";
 
 const main = async () => {
-  console.log(figlet.textSync("Discord Webhook Helper"));
+  console.log(figlet.textSync("Discord Webhook Manager"));
 
   const program = new Command()
-    .version("1.0.0")
+    .version("0.2.0")
     .description("Helper to register discord webhooks on different services");
 
   commands.forEach((command) => {
