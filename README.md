@@ -4,7 +4,7 @@ Helper CLI tool that will allow you to easily manage github functionality in a s
 
 ## IN DEVELOPMENT
 
-Current version: 0.3.0
+Current version: 0.3.1
 
 ## Commands
 
