@@ -4,6 +4,8 @@ import inquirer from "inquirer";
 
 import { delay } from "../utils/timingUtils.js";
 
+const DELAY_MS = 2000;
+
 const addDiscWebhook = new Command("add-discord-webhook")
   .description("Add a discord webhook to your repositories based on a regex")
   .option(
@@ -78,6 +80,31 @@ const addDiscWebhook = new Command("add-discord-webhook")
       } = await octokit.rest.users.getAuthenticated();
 
       for (const validRepo of validRepos) {
+        let webhookExists: boolean = false;
+
+        for await (const hookResponse of octokit.paginate.iterator(
+          octokit.rest.repos.listWebhooks,
+          {
+            owner: username,
+            repo: validRepo,
+          }
+        )) {
+          if (
+            hookResponse.data.some((hook) => hook.config.url === webhookURL)
+          ) {
+            console.log(
+              `Discord webhook ${webhookURL} already exists for repository ${validRepo}. Skipping.`
+            );
+            webhookExists = true;
+            break;
+          }
+        }
+
+        if (webhookExists) {
+          await delay(DELAY_MS);
+          continue;
+        }
+
         const response = await octokit.rest.repos.createWebhook({
           owner: username,
           repo: validRepo,
@@ -93,7 +120,7 @@ const addDiscWebhook = new Command("add-discord-webhook")
           `Webhook created: id (${response.data.id}) in repository ${validRepo}`
         );
 
-        await delay(2000);
+        await delay(DELAY_MS);
       }
     } catch (error) {
       console.error(error);
